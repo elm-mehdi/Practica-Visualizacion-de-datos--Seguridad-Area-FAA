@@ -28,8 +28,8 @@ top_7_incidentes <- data %>%
 
 
 top_7_combinado <- bind_rows(
-  mutate(top_7_fatalidades, Type = "Top 7 por victimas mortales"),
-  mutate(top_7_incidentes, Type = "Top 7 por incidentes")
+  mutate(top_7_fatalidades, Type = "Fallecidos"),
+  mutate(top_7_incidentes, Type = "Incidentes")
 )
 print(top_7_combinado)
 
